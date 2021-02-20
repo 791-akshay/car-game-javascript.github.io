@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.main-container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-repeat: revert;
+}
+.hide
+{
+    display: none;
+}
+.car, .animi
+{
+    position: absolute;
+    bottom: 60px;
+}
+.car
+{
+    width: 90px;
+    height: 130px;
+    background-image: url(37faf6dff5ce3d7d081e2b59371e3a09-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.animi
+{
+    height: 70px;
+    width: 70px;
+    background-image: url(car-front-view-vector-flat-260nw-1774844849-removebg-preview-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.road
+{
+    width: 400px;
+    height: 100vh;
+    background: #121518;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-right: 5px dashed #c8d6e5;
+    border-left: 5px dashed #c8d6e5;
+}
+.lines
+{
+    width: 8px;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    margin-left: 195px;
+}
+.score
+{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background: #10ac84;
+    width: 300px;
+    height: 70px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 5px 5px #777;
+}
+.showmsg
+{
+    position: absolute;
+    background-color: #ee5253;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    columns: #fff;
+    z-index: 1;
+    text-align: center;
+    border: 1px solid #ff6b6b;
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5;
+    font-size: 20px;
+    word-spacing: 3;
+    line-height: 30px;
+    box-shadow: 0 5px 5px #777;
+}
+
+@media screen and (max-width: 440px)
+{
+    .road
+    {
+        width: 260px;
+    }
+    .showmsg
+    {
+        width: 300px;
+    }
+    .showmsg p
+    {
+        font-size: 16px;
+        width: 300px;
+        line-height: 28px;
+    }
+    .lines
+    {
+        margin-left: 135px;
+        height: 86px;
+        width: 5px;
+    }
+    .score
+    {
+        width: 43px;
+        height: 45px;
+        top: 33px;
+        left: 4px;
+        line-height: 22px;
+        font-size: 14px;
+    }
+    .animi
+    {
+        height: 55px;
+        width: 60px;
+    }
+    .car
+    {
+        width: 70px;
+        height: 90px;
+    }
+}
